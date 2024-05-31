@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Foro</title>
+    <link rel="icon" href="img/cosito.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/crearforo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Rancho&family=Redressed&family=Sue+Ellen+Francisco&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="juice">
+		<a href="main.html" class="logo">Brainwave</a>
+		<nav class="navega">
+			<ul>
+				<li><a href="main.html">Preguntame</a></li>
+			</ul>
+		</nav>
+	</div>
+    <main>
+        <form id="createForumForm">
+            <label for="forumName">Nombre del Foro:</label>
+            <input type="text" id="forumName" required>
+            <label for="forumQuestion">Pregunta Inicial:</label>
+            <input type="text" id="forumQuestion" required>
+            <button type="submit">Crear Foro</button>
+        </form>
+    </main>
+    <script src="js/create-forum.js"></script>
+</body>
+</html>

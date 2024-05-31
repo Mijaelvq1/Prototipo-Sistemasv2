@@ -1,0 +1,299 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #111111;
+}
+
+#userStatus{
+    font-family: 'Itim', cursive;
+    font-size: 1.2vw;
+    position: absolute;
+    right: 2vw;
+    top: 3vh;
+    color: #ffffff;
+}
+.buttoncito{
+    margin: 0;
+    padding-top: -4vw;
+    font-family: 'Itim', cursive;
+}
+#logoutButton{
+    background-color: #0984ad;
+    color: white;
+    font-weight: bold;
+    border-radius: 15px;
+    border: none;
+}
+#logoutButton:hover{
+    background-color:#099aad;
+    transition: 1s;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: #07c9ff;
+}
+a:hover{
+    color: whitesmoke;
+    transition: 0.5s;
+}
+
+.logo{
+    
+    height: 7vh;
+    width: 14vw;
+}
+header {
+    height: 7vh;
+    background-color: #152a51;
+    color: #ffffff;
+    padding: 10px;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.479);
+}
+h1{
+    top: -3.5vh;
+    padding-left: 5vw;
+    position: relative;
+    width: 2vw;
+    font-size: 5vh;
+    font-family: 'Redressed', cursive;
+}
+
+#searchForm{
+    position: absolute;
+    left: 70vh;
+    top: 2vh;
+    width: 20vw;
+}
+#searchInput {
+    padding: 5px;
+    width: 30vw;
+    height: 1.3vw;
+    font-size: 0.9vw;
+    color: rgb(0, 0, 0);
+    background-color: #697d94;
+    border: 2px solid rgba(0, 0, 0, 0);
+    border-radius: 35px;
+}
+#searchInput::placeholder{
+    color: rgba(0, 0, 0, 0.482);
+}
+#searchInput:hover{
+    background-color: #8dfffb48;
+    transition: 500ms;
+}
+
+#createForumButton {
+    font-weight: bold;
+    position: fixed;
+    bottom: 5vw;
+    right: 10vw;
+    padding: 10px 20px;
+    background-color: #0e4762;
+    border-radius: 30px;
+    width: 10vw;
+    height: 6vh;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#createForumButton:hover {
+    background-color: #0984ad;
+    transition: 0.5s;
+}
+main{
+    width: 50%;
+    height: 100%;
+}
+
+#ads {
+    background-color: #f0f0f049;
+    padding: 0;
+    position: absolute;
+    border-radius: 15px;
+    top: 8vw;
+    right: 15vh;
+    width: 33vh;
+    height: 60vh;
+    z-index: 0;
+}
+#ads img{
+    border-radius: 15px;
+    width: 33vh;
+    height: 60vh;
+}
+
+#forumList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 6vw;
+}
+
+.forum {
+    border-radius: 15px;
+    margin: 10px;
+    padding: 20px;
+    width: 80%;
+    height: 15vh;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #002c58;
+}
+
+.forum a {
+    text-decoration: none;
+    font-family: "Itim";
+    font-size: 2vh;
+    color: #ffffff;
+    flex-grow: 1;
+    text-align: left;
+}
+
+.forum-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.forum-button {
+    padding: 5px 10px;
+    background-color: #6c757d;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+
+.forum-button:hover {
+    background-color: #5a6268;
+}
+
+.forum-button.delete {
+    background-color: #dc3545;
+}
+
+.forum-button.delete:hover {
+    background-color: #c82333;
+}
+@media screen and (max-width: 1024px){
+    #searchForm{
+        left: 50vh;
+        top: 3vh;
+    }
+    #ads{
+        top: 15vw;
+    }
+    #userStatus{
+        font-size: 1.5vw;
+    }
+    #createForumButton {
+        bottom: 5vw;
+        right: 16vw;
+        width: 14vw;
+        height: 6vh;
+    }
+}
+@media screen and (max-width: 768px){
+    #searchForm{
+        left: 40vh;
+    }
+    .arba{
+        position: absolute;
+        right: 12vw;
+        width: 13vh;
+    }
+    #ads{
+        top: 18vw;
+        right: 5vh;
+    }
+    #userStatus{
+        font-size: 2vw;
+    }
+    #createForumButton {
+        bottom: 5vw;
+        right: 10vw;
+        width: 20vw;
+        height: 6vh;
+    }
+}
+
+@media screen and (max-width: 430px){
+    #searchForm{
+        left: 34vw;
+    }
+    #searchInput{
+        height: 2vh;
+        font-size: 2vw;
+    }
+    .arba{
+        position:absolute;
+        font-size: 3vw;
+        width: 10vh;
+        top: -1vh;
+        right: 3vw
+    }
+    .abjo{
+        width: 10vh;
+        font-size: 3vw;
+        position: absolute;
+        top: 5vw;
+        right: 3vw;
+    }
+#forumList{
+    width: 97vw;
+    padding-left: 0;
+    margin-left: 0;
+}
+.forum{
+    width: 100%;
+    margin-left: 1vw;
+}
+
+#ads {
+    display: none;
+}
+.logo{
+    font-size: 1vw;
+}
+#userStatus{
+    font-size: 2.5vw;
+}
+h1{
+    width: 1vw;
+    font-size: 7vw;
+    padding-top: 2vh;
+    padding-left: 0;
+}
+#createForumButton{
+bottom: 15vw;
+width: 35vw;
+height: 7vh;
+right: 10vw;
+}
+
+}
+@media screen and (max-width: 380px){
+    #searchForm{
+        left: 17vh;
+    }
+}
+
+@media screen and (max-width: 320px){
+    #searchForm{
+        left: 15vh;
+    }
+    #searchInput{
+        font-size: 1.3vh;
+    }
+    .arba, .abjo{
+        right: 1vh;
+    }
+    h1{
+        padding-top: 3vh;
+    }
+}

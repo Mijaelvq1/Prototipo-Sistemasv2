@@ -1,0 +1,205 @@
+.tooltiptext {
+    visibility: hidden;
+}
+
+ .tooltiptext:hover {
+    visibility: visible;
+    opacity: 1;
+}
+/**/
+.juice{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: #152a51;
+    height: 3vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 20px;
+    padding-top: 30px;
+    z-index: 10;
+}
+
+.logo{
+    font-family: 'Redressed', cursive;
+    text-decoration: none;
+    color: #ffffff;
+    position: relative;
+    top: -30px;
+    font-size: 7vh;
+    width: 20vw;
+}
+.logo:hover{
+    color: #03fef7;
+    transition: 2s;
+}
+.navega{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.juice ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.juice ul li{
+    list-style: none;
+}
+
+.juice ul li a{
+    position: relative;
+    font-family: 'Sue Ellen Francisco', cursive;
+    font-size: 4vh;
+    margin: 0 15px;
+    text-decoration:wavy;
+    color: #ffffff;
+    letter-spacing: 2px;
+    font-weight: 600;
+    
+}
+.copy{
+    color: #302a21;
+}
+
+.juice nav ul li a:hover{
+    color: #418e8e;
+    transition: 0.7s;
+}
+
+
+/* Estilos para la página de visualización del foro */
+body{
+    background-color: rgb(20, 20, 20);
+}
+#forumTitle {
+    font-family: 'Redressed', cursive;
+    text-align: center;
+    margin-top: 12vh;
+    font-size: 2em;
+    color: #ffffff;
+}
+
+#forumContent {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    font-family: "Itim";
+    border-radius: 25px;
+    background-color: #102743;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.question {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    color: #f3f3f3;
+}
+
+.answer {
+    font-size: 1em;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: black;
+    border-bottom: 1px solid #eee;
+    color: #666;
+}
+
+#answerForm {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 25px;
+    background-color: #102743;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#answerForm label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#answerForm textarea {
+    width: 97%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    font-family: "Itim",cursive;
+    font-size: 2vh;
+    background-color: #140f07;
+    color: white;
+    resize: vertical;
+}
+#answerForm textarea:hover{
+    background-color: #00c3ffa9;
+    transition: 0.5s;
+}
+#answerForm button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#answerForm button:hover {
+    background-color: #0056b3;
+}
+
+.answer {
+    font-size: 1em;
+    background-color: #102b46;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.answer:hover{
+    background-color: #114789;
+    transition: 2s;
+}
+.answer-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.answer-button {
+    padding: 5px 10px;
+    background-color: #6c757d;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+
+.answer-button:hover {
+    background-color: #5a6268;
+}
+
+.answer-button.delete {
+    background-color: #dc3545;
+}
+
+.answer-button.delete:hover {
+    background-color: #c82333;
+}
+
+@media screen and (max-width:430px) {
+    .logo{
+        font-size: 10vw;
+        top: -3vw;
+    }
+}

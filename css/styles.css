@@ -1,0 +1,139 @@
+/* Estilos para los formularios de registro e inicio de sesión */
+*{
+    margin: 0;
+
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+}
+
+.left, .right {
+    flex: 1;
+    height: 100%;
+}
+.left{
+    background-image: url('../img/nasa.jpg'); 
+    background-size: cover;
+}
+.left p{
+    color: #d7f0ff;
+    font-family: 'Itim', cursive;
+    font-weight: bold;
+    text-align: center;
+    font-size: 3vw;
+    padding: 2vw;
+    padding-top: 10vh;
+}
+.centrado{
+    text-align: center;
+    font-size: 5vh;
+    font-family: 'Redressed', cursive;
+    padding-top: 10vh;
+    padding-bottom: 15vh;
+    color: #30b8fd;
+}
+.right{
+    background-color: rgb(7, 7, 7);
+}
+form {
+    font-family: "Itim";
+    max-width: 25vw;
+    max-height: 40vh;
+    margin: 20px auto;
+    margin-top: 0;
+    padding: 20px;
+    border: 1px solid #636363;
+    border-radius: 10px;
+    background-color: #131925;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10vh;
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+    color: white;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+form input {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 20px;
+    color: white;
+    border: 1px solid #636363;
+    background-color: #0e0e0e;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    margin-left: 9vw;
+    margin-top: 1vw;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+.cenr{
+    font-family: "Itim";
+    text-align: center;
+    color: white;
+}
+a{
+    color: #30b8fd;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+    .left p{
+        font-size: 5vw;
+    }
+}
+@media screen and (max-width: 430px){
+    .container {
+        flex-direction: column; 
+    }
+
+    .left{
+        height: 30%;
+        background-image: url(../img/image.png);
+    }
+    .left p{
+        color: white;
+        font-size: 4vh;
+    }
+    form input{
+        width: 90%;
+    }
+    .right{
+        height: 70%;
+    }
+    .centrado{
+        padding-top: 3vh;
+        padding-bottom: 5vh;
+    }
+    #loginForm{
+        max-width: 50vw;
+        margin-top: 0;
+        margin-bottom: 8vh;
+    }
+    .cenr{
+        margin-bottom: 6vh;
+    }
+} 
